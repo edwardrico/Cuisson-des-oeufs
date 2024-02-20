@@ -4,10 +4,10 @@ import beepy
 
 def countdown(timer):
     for i in range(timer, 0, -1):
+        time.sleep(1)
         print(".", end="", flush=True)
-        if i % 1 == 0:
-            print(f"\nTemps restant : {i // 60:02d}:{i % 60:02d}.", end="")
-            time.sleep(1)
+        if i % 10 == 0:
+            print(f"\nTemps restant : {i // 60:02d}:{i % 60:02d}")
     print("\nCuisson terminée")
     beepy.beep(sound="ping")
 
