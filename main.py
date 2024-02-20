@@ -9,7 +9,7 @@ def countdown(timer):
             print(f"\nTemps restant : {i // 60:02d}:{i % 60:02d}.", end="")
             time.sleep(1)
     print("\nCuisson terminée")
-    beepy.beep(sound="ping")  # Jouer un son une fois la cuisson terminée
+    beepy.beep(sound="ping")
 
 
 def main():
